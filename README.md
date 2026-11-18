@@ -2,7 +2,7 @@
 
 A reading guide for Design of Unmanned Aerial Systems by Mohammad H. Sadraey, using the same reader layout as the earlier aircraft guide.
 
-Read online at https://ennasryme.github.io/uas-design-guide/.
+Read online at https://ridaen-nasry.github.io/uas-design-guide/.
 
 For a local copy, open `index.html` directly, or run `python3 -m http.server 8000` from this directory and visit `http://localhost:8000`.
 
