@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unmanned Aerial Systems Design Guide</title>
+    <meta
+      name="description"
+      content="A chapter-by-chapter reading guide for Design of Unmanned Aerial Systems."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#readingArea">Skip to reading</a>
+    <div class="site-shell">
+      <div class="guide-layout">
+        <aside class="guide-nav" aria-label="Lessons">
+          <div class="nav-intro">
+            <h1>Unmanned Aerial Systems</h1>
+            <p class="author">Mohammad H. Sadraey</p>
+            <p class="book-topic">Design guide · 14 chapters</p>
+            <small id="guideCount"></small>
+            <label class="search-label" for="lessonSearch">Find a section</label>
+            <input id="lessonSearch" type="search" placeholder="Search this book…" autocomplete="off">
+            <p id="searchStatus" class="search-status" aria-live="polite"></p>
+          </div>
+          <nav id="lessonList"></nav>
+        </aside>
+
+        <main class="guide-main" id="readingArea">
+          <article class="lesson">
+            <header class="lesson-header">
+              <p class="eyebrow" id="lessonGroup"></p>
+              <h2 id="lessonTitle"></h2>
+              <p class="lesson-meta" id="lessonMeta"></p>
+              <a id="sourcePage" class="source-page" target="_blank" rel="noopener">View book page</a>
+              <button class="done-toggle" id="lessonDoneToggle" type="button" aria-label="Mark done" aria-pressed="false"></button>
+            </header>
+
+            <div id="lessonContent" class="lesson-content"></div>
+            <footer class="lesson-footer">
+              <button id="footerPrevLesson" type="button">Previous</button>
+              <button id="footerNextLesson" type="button">Next</button>
+            </footer>
+          </article>
+        </main>
+      </div>
+    </div>
+
+    <div class="reading-progress" aria-hidden="true">
+      <span id="readingProgressBar"></span>
+    </div>
+
+    <button class="highlight-popover" id="highlightPopover" type="button" hidden>
+      Highlight
+    </button>
+
+    <div class="figure-lightbox" id="figureLightbox" role="dialog" aria-modal="true" aria-label="Expanded figure" hidden>
+      <button class="figure-lightbox__close" id="figureLightboxClose" type="button" aria-label="Close figure">
+        &times;
+      </button>
+      <figure>
+        <img id="figureLightboxImage" alt="">
+        <figcaption id="figureLightboxCaption"></figcaption>
+      </figure>
+    </div>
+
+    <script src="guide-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
